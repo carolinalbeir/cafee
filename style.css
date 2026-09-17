@@ -1,0 +1,358 @@
+body {
+background-color: #fdeacc;
+text-align:center;
+font-family:Georgia, 'Times New Roman', Times, serif;
+padding: 20px;
+margin: 0;
+}
+
+
+
+
+h1{
+    font: size 44px;
+    color: #5b2c1f;
+    margin-bottom: 5px;
+}
+
+
+body > p{
+color:#6b4a3a;
+font-size: 18px;
+font-style:italic ;
+}
+
+
+/* بتوع الفيو منيو */
+/* body > a{
+    display:inline-block;
+    text-decoration: none;
+    background-color: #7b4b35;
+    color: rgb(255, 255, 255);
+    padding: 10px 25px;
+    border-radius: 8px;
+} */
+
+/* body > a:hover{
+    background-color:#5b2c1f;
+} */
+
+/* جزء الناف بار */
+
+ nav{
+display: flex;
+justify-content: center;
+gap: 40px;
+padding: 15px;
+margin-bottom: 30px;
+border-bottom: 1px solid #b8957a;
+} 
+
+
+
+ nav a {
+color: #5b2c1f;
+font-weight: bold;
+text-decoration: none;
+border-radius: 20px;
+padding: 7px 14px;
+transition: 0.3s;
+} 
+
+
+
+nav a:hover{
+background-color: #977c6c;
+
+}
+
+
+/* جزء الabout */
+
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 0px auto;
+    max-width: 1000px;
+}
+
+#about> img{
+width: 400px;
+height: 280px;
+object-fit: cover;
+border-radius: 15px;
+
+} 
+ #about > h2{
+font-size: 36px;
+margin-top: 0;
+margin-bottom: 20px;
+} 
+
+
+#about >div{
+max-width: 450px;
+text-align: left;
+color: rgb(47, 30, 18);
+}
+
+
+/* سطر المنيو */
+
+#menu >h2{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 15px;
+width:fit-content ;
+margin: 40px auto;
+color: rgb(47, 30, 18);
+}
+
+#menu>h2::before,
+#menu >h2::after {
+    content: "";
+    height: 1px;
+    background-color: #b8957a;
+    width: 450px ;
+}
+
+
+
+
+/* شكل المنيو نفسه */
+
+#menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+h3{
+   color: rgb(47, 30, 18);
+   font-size: 25px;
+}
+
+
+li{
+margin: 0;
+padding: 10px;
+width: 280px;
+border-radius: 15px;
+box-shadow: 0 4px 10px rgb(103, 67, 67);
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 15px;
+font-style: bold;
+
+/* الكلام اللي تحت الصوره */
+display: flex;
+flex-direction: column;
+align-items:center;
+gap: 8px;
+transition: 0.3s;
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-weight: bold;
+}
+
+
+li:hover{
+    transform: scale(1.05);
+}
+
+/* صور الليست  */
+li img{
+width: 265px;
+height: 120px;
+object-fit:cover;
+border-radius: 12px;
+}
+/* الخط بتاع كلمه ديزيرتس */
+#menu >h3>span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: fit-content;
+    margin: 40px auto;
+}
+
+#menu>h3>span::before,
+#menu >h3>span::after{
+content: "";
+height: 1.5px;
+background-color: #b8957a;
+width: 400px;
+}
+
+/* ال contact */
+
+/* الخط بتاع الكلمه */
+
+#contact >h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: fit-content;
+    margin: 40px auto;
+    color:rgb(47, 30, 18);
+} 
+
+#contact>h2::before,
+#contact >h2::after{
+    content: "";
+    height: 1px;
+    background-color: #b8957a;
+    width: 350px;
+}
+
+/* شكل الفورم */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+input,
+textarea {
+    width: 350px;
+    padding: 12px;
+    border: 1px solid #b8957a;
+    border-radius: 8px;
+    font-family: inherit;
+    background-color: #f9edda;
+    box-sizing: border-box;
+}
+
+
+textarea{
+    height: 80px;
+    resize: none;
+}
+
+button{
+    background-color: #7b4b35;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 350px;
+}
+
+button:hover{
+    background-color: #5b2c1f;
+}
+
+
+/* location & Contact*/
+
+#location{
+/* margin: 50px auto; */
+color: rgb(47, 30, 18);
+}
+
+#location >h2,
+#contact>h2{
+color: rgb(47, 30, 18);
+display: flex;
+justify-content: center;
+align-items:center;
+gap: 15px;
+width:fit-content ;
+margin: 40px auto;
+
+}
+
+#location >h2::before,
+#location>h2::after{
+    content: "";
+    height: 1px;
+    background-color: #b8957a;
+    width: 150px; ;
+}
+
+#contact >h2::before,
+#contact>h2::after{
+    content: "";
+    height: 1px;
+    background-color: #b8957a;
+    width: 150px; ;
+}
+
+
+#location iframe{
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(91, 44, 31, 0.2);
+}
+
+
+#location,
+#contact {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    margin: 0;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+/* الخط الفاصل */
+/* #contact {
+    border-left: 1px solid #c9a28f;
+} */
+
+#contact {
+    border-left: none;
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100px;
+    height: 250px;
+    border-left: 2px solid #c9a28f;
+}
+
+
+
+footer {
+    margin-top: px;
+    padding: 10px;
+    background-color: #5b2c1f;
+    color: white;
+}
+
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #about > div {
+        flex-direction: column;
+    }
+
+    #about img {
+        width: 90%;
+    }
+
+    input,
+    textarea {
+        width: 80%;
+    }
+}
+
